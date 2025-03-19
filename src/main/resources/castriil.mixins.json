@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "net.xoroshio.castriil.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "castriil.refmap.json",
+  "mixins": [
+    "MinecraftMixin",
+    "ModVersionsMixin",
+    "ModVersionsMixin",
+    "ClientPacketListenerMixin"
+  ],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}
