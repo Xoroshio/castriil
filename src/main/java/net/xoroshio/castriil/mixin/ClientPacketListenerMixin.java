@@ -28,7 +28,7 @@ public class ClientPacketListenerMixin {
         }
         Vec3 motion = new Vec3(packet.getXa() / 8000.0D, packet.getYa() / 8000.0D, packet.getZa() / 8000.0D);
         if(Castriil.shouldCancelServerSetClientMotion(player, motion)){
-            player.lerpMotion(0, motion.y, 0);
+            player.lerpMotion(player.getDeltaMovement().x, motion.y, player.getDeltaMovement().z);
             callback.cancel();
         }
     }

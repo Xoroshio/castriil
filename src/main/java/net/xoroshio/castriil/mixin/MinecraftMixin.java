@@ -7,6 +7,7 @@ import net.xoroshio.castriil.Castriil;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Minecraft.class)
@@ -18,8 +19,13 @@ public class MinecraftMixin {
         if(player == null){
             callback.setReturnValue(false);
         } else {
-            callback.setReturnValue(callback.getReturnValue() || Castriil.shouldGlowFor(player, entity));
+            callback.setReturnValue(Castriil.shouldGlowFor(player, entity));
         }
+    }
+
+    @Inject(at = @At("RETURN"), method = "<init>*")
+    public void onConstructed(CallbackInfo callback) {
+        Castriil.read(Castriil.getSaveFile());
     }
 
 }

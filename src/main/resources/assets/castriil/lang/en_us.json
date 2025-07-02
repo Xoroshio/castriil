@@ -1,26 +1,21 @@
 {
   "key.categories.castriil" : "Castriil Client Keys",
   "key.castriil.gui" : "Open Castriil GUI",
-  "key.castriil.attack" : "Attack",
-  "key.castriil.attack_though_walls" : "Attack Through Walls",
-  "key.castriil.look_at_enemy_player" : "Look at Enemy Player",
-  "key.castriil.bridge" : "Bridge",
+  "key.castriil.scaffold_bridge" : "Scaffold Bridge",
+  "key.castriil.kill_aura" : "Kill Aura ",
+  "key.castriil.toggle_flying" : "Toggle Flying",
+  "key.castriil.fly_up" : "Fly Up",
+  "key.castriil.open_shop" : "Open Shop",
+  "key.castriil.open_upgrades" : "Open Upgrades",
+  "key.castriil.set_shop" : "Set Shop",
+  "key.castriil.set_upgrades" : "Set Upgrades",
 
   "screen.castriil.main" : "Castriil GUI",
 
-  "screen.button.castriil.velocity_cancel" : "Cancel Server Velocity: ",
-  "screen.button.castriil.spam_attack" : "Spam Attack: ",
-  "screen.button.castriil.attack_delay" : "Attack Delay: ",
+  "option.castriil.velocity_cancel" : "Cancel Server Velocity: ",
+  "option.castriil.glow_range" : "Glow Range: ",
+  "option.castriil.kill_aura_radius" : "Kill Aura Radius ",
+
   "text.castriil.on" : "On",
-  "text.castriil.off" : "Off",
-  "text.castriil.number.1" : "1",
-  "text.castriil.number.2" : "2",
-  "text.castriil.number.3" : "3",
-  "text.castriil.number.4" : "4",
-  "text.castriil.number.5" : "5",
-  "text.castriil.number.6" : "6",
-  "text.castriil.number.7" : "7",
-  "text.castriil.number.8" : "8",
-  "text.castriil.number.9" : "9",
-  "text.castriil.number.10" : "10"
+  "text.castriil.off" : "Off"
 }

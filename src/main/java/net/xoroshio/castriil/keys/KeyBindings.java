@@ -16,35 +16,69 @@ public class KeyBindings {
             InputConstants.Type.KEYSYM.getOrCreate(InputConstants.KEY_N),
             CATEGORY);
 
-    public static final KeyMapping ATTACK = new KeyMapping(
-            "key.castriil.attack",
+    public static final KeyMapping SCAFFOLD_BRIDGE = new KeyMapping(
+            "key.castriil.scaffold_bridge",
             KeyConflictContext.IN_GAME,
             InputConstants.UNKNOWN,
             CATEGORY);
 
-    public static final KeyMapping ATTACK_THOUGH_WALLS = new KeyMapping(
-            "key.castriil.attack_through_walls",
+    public static final KeyMapping KILL_AURA = new KeyMapping(
+            "key.castriil.kill_aura",
             KeyConflictContext.IN_GAME,
             InputConstants.UNKNOWN,
             CATEGORY);
 
-    public static final KeyMapping LOOK_AT_ENEMY_PLAYER = new KeyMapping(
-            "key.castriil.look_at_enemy_player",
+    public static final KeyMapping OPEN_SHOP = new KeyMapping(
+            "key.castriil.open_shop",
             KeyConflictContext.IN_GAME,
             InputConstants.UNKNOWN,
             CATEGORY);
 
-    public static final KeyMapping BRIDGE = new KeyMapping(
-            "key.castriil.bridge",
+    public static final KeyMapping SET_SHOP = new KeyMapping(
+            "key.castriil.set_shop",
+            KeyConflictContext.IN_GAME,
+            InputConstants.UNKNOWN,
+            CATEGORY);
+
+    public static final KeyMapping OPEN_UPGRADES = new KeyMapping(
+            "key.castriil.open_upgrades",
+            KeyConflictContext.IN_GAME,
+            InputConstants.UNKNOWN,
+            CATEGORY);
+    public static final KeyMapping SET_UPGRADES = new KeyMapping(
+            "key.castriil.set_upgrades",
+            KeyConflictContext.IN_GAME,
+            InputConstants.UNKNOWN,
+            CATEGORY);
+
+    public static final KeyMapping TOGGLE_FLYING = new KeyMapping(
+            "key.castriil.toggle_flying",
+            KeyConflictContext.IN_GAME,
+            InputConstants.UNKNOWN,
+            CATEGORY);
+
+    public static final KeyMapping FLY_UP = new KeyMapping(
+            "key.castriil.fly_up",
+            KeyConflictContext.IN_GAME,
+            InputConstants.UNKNOWN,
+            CATEGORY);
+
+    public static final KeyMapping TEST = new KeyMapping(
+            "Test (Development Purposes)",
             KeyConflictContext.IN_GAME,
             InputConstants.UNKNOWN,
             CATEGORY);
 
     public static void register(Consumer<KeyMapping> register){
         register.accept(OPEN_GUI);
-        register.accept(ATTACK);
-        register.accept(ATTACK_THOUGH_WALLS);
-        register.accept(LOOK_AT_ENEMY_PLAYER);
-        register.accept(BRIDGE);
+        register.accept(KILL_AURA);
+        register.accept(SCAFFOLD_BRIDGE);
+        register.accept(OPEN_SHOP);
+        register.accept(OPEN_UPGRADES);
+        register.accept(TOGGLE_FLYING);
+        register.accept(FLY_UP);
+        register.accept(SET_SHOP);
+        register.accept(SET_UPGRADES);
+        register.accept(TEST);
     }
 }

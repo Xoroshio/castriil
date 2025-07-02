@@ -6,7 +6,8 @@
   "mixins": [
     "MinecraftMixin",
     "ModVersionsMixin",
-    "ModVersionsMixin",
+    "LevelRendererMixin",
+    "GameRendererMixin",
     "ClientPacketListenerMixin"
   ],
   "client": [
