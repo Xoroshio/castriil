@@ -73,7 +73,7 @@ public class Castriil {
             runDevTest(player, level);
             killAura(player, level);
             openShop(player, level);
-            // HEHE
+            // nope
             openUpgrades(player, level);
             fly(player);
         } catch (Throwable t){
