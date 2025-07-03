@@ -75,6 +75,7 @@ public class Castriil {
             openShop(player, level);
             openUpgrades(player, level);
             fly(player);
+            // TEST GIT
         } catch (Throwable t){
             LOGGER.error("Error during Castriil Client Tick", t);
         }
