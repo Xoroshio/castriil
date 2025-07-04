@@ -8,6 +8,7 @@
     "ModVersionsMixin",
     "LevelRendererMixin",
     "EntityMixin",
+    "LivingEntityMixin",
     "GameRendererMixin",
     "ClientPacketListenerMixin"
   ],
